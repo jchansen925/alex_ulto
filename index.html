@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
+	<title>HTML Email Template Boilerplate</title>
+   <style type="text/css">
+   	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+      table {
+			border-spacing: 0;
+		}
+      td {
+         padding: 0;
+      }
+      p {
+         font-size: 15px;
+      }
+      img {
+         border: 0;
+      }
+      a {
+         text-decoration: none;
+         color: #e8fbfa;
+         font-size: 16px;
+      }
+      .content {
+         line-height: 20px;
+         font-size: 15px;
+      }
+
+      img.two-col-img.logo-small {
+         display: none!important;
+      }
+
+      @media screen and (max-width: 599.98px) {
+         .two-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+            padding-bottom: 0!important;
+         }
+
+         .two-columns .top-col {
+            padding-left: 10px!important;
+         }
+         img.two-col-img {
+            width: 300px!important;
+            max-width: 300px!important;
+         }
+
+         img.two-col-img.logo {
+           
+            display:none!important;
+         }
+
+         img.two-col-img.logo-small {
+            width: 166px!important;
+            max-width: 166px!important;
+            padding-left: 66px!important;
+            display:block!important;
+         }
+        
+         .two-third-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
+         .two-third-columns .padding.first {
+            padding-bottom: 0!important;
+         }
+         .two-third-columns .padding.last {
+            padding-top: 0!important;
+         }
+         img.one-third-col-img {
+            width:2000px!important;
+            max-width: 200px!important;
+         }
+         .two-third-columns .content {
+            text-align: center!important;
+         }
+         img.three-col-img-last {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         .three-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
+         /*
+         table.center-button {
+            padding-left:50px!important;
+         }
+         */
+         p.ulto-text {
+            padding-right: 5px!important;
+            padding-left: 5px!important;
+         }
+         p.ulto-text-narrow {
+            padding-right: 15px!important;
+            padding-left: 15px!important;
+         }
+      }
+      @media screen and (max-width: 399.98px) {
+         img.three-col-img {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         p.ulto-text {
+            padding-right: 5px!important;
+            padding-left: 5px!important;
+         }
+         p.ulto-text-narrow {
+            padding-right: 15px!important;
+            padding-left: 15px!important;
+         }
+        
+      }
+
+
+      @media screen and (max-width:544.98px) {
+        a.top-links {
+            text-align: center!important;
+            padding-bottom: 8px!important;
+            display: block!important;
+        }
+      }
+     
+
+
+
+      /* Custom Dark Mode Colors */
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+         body, center, table, .darkmode-bg {
+            background: #2d2d2d!important;
+            color: #ffffff!important;
+         }
+         .darkmode-transparent {
+            background-color: transparent!important;
+         }
+      }
+   </style>
+   
+	<!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			table {border-collapse: collapse !important;}
+		</style>
+	<![endif]-->
+	
+</head>
+<body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
+   <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         body {background-color: #dde0e1!important;}
+         body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
+      </style>
+   <![endif]-->
+
+   <center style="width: 100%;table-layout:fixed;background-color: #dde0e1;padding-bottom: 40px;">
+      <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+
+         <!-- Preheader (remove comment) -->
+         <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
+            <!-- Add Preheader Text Here (85-100 characters in length) -->
+         </div>
+         <!-- End Preheader (remove comment) -->
+      
+         <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;color:#565656;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+         <table align="center" style="border-spacing:0;color:#565656;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
+
+
+<!-- START FIRST TABLE ROW -->
+            <tr>
+               <td style="padding:0;">
+                  <table width="100%" style="border-spacing:0;" role="presentation">
+                  
+                     <tr>
+                        <td height="3" style="background-color: #333333;"></td>
+                     </tr>
+                     <tr>
+                        <td height="40" style="background-color: #333333; text-align: center;">
+                                <a class="top-links" href="mailto:email@example.com" style="font-size: 12px; padding-right: 5px; text-decoration:underline;color:#e8fbfa;">FULL PRESCRIBING INFORMATION</a>
+                                 <a class="top-links" href="tel:18008888888" style="padding-right:5px;font-size: 12px;text-decoration:underline;color:#e8fbfa;">MEDICATION GUIDE</a>
+                                 <a class="top-links" href="https://example.com" style="font-size: 12px;text-decoration:underline;color:#e8fbfa;">IMPORTANT SAFETY INFORMATION</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td height="3" style="background-color: #333333;"></td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
+            <!-- START BANNER --two colls -->
+            <tr>
+                <td style="padding: 35px 0 30px 0;background-color:  #007267;">
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                      <td class="two-columns" style="padding:0;font-size:0;
+                      text-align: center;">
+      
+                       <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing:0;" role="presentation">
+                          <tr>
+                            <td width="300" valign="top" style="padding:0;">
+                       <![endif]-->
+
+                    <table class="column top-col" style="border-spacing:0;
+                       vertical-align:top;width:100%;max-width:300px;
+                       display:inline-block;" role="presentation">
+                       <tr>
+                        <td class="padding" style="padding: 20px 20px 20px 30px;"> 
+                            <table class="content" style="border-spacing:0;text-align:left" role="presentation">
+                            <tr>
+                              <td>
+                                 <a href="#" target="_blank">
+                                    <img class="two-col-img logo-small" src="img/logo.png" width="166" border="0" alt="logo" style="max-width:166px; padding-left: 66px;">
+                                  </a>
+                                <a href="#" target="_blank">
+                                  <img class="two-col-img logo" src="https://viscira98478.imgus11.com/public//82976e434d442be54702447f63f3420f.png?r=891786542" width="205" border="0" alt="logo" style="max-width:205px; padding-left: 10px;">
+                                </a> 
+                              </td>
+                            </tr>
+                            <tr>
+                            <td style="padding-top: 40px;">
+                                    <a href="#" target="_blank">
+                                      <img class="two-col-img" src="https://viscira98478.imgus11.com/public//bd2fdfa446bbc1436e9aea2779d21952.png?r=1638023978" width="205" border="0" alt="logo" style="max-width:205px;">
+                                    </a>
+                                  </td>
+                            </tr>
+                          </table>
+                        </td>
+                     </tr>
+                     </table>
+
+                <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="300" valign="top" style="padding:0;">
+                 <![endif]-->
+                 <table class="column top-col" style="border-spacing:0;
+                       vertical-align:top;width:100%;max-width:300px;
+                       display:inline-block" role="presentation">
+                       <tr>
+                        <td class="padding" style="padding: 20px 20px 20px 30px;">
+                            <table class="content" style="border-spacing:0;text-align:left" role="presentation">
+                                <tr>
+                                    <td class="padding" style="padding:10px 10px 20px 10px;">
+                                        <p style="color:#ffffff; font-family: 'Lato', sans-serif, Arial, Helvetica!important;font-size:15px;line-height: 20px;">For treatment of atypical-HUS in adults and pediatric patients 1 month of age and older. Not indicated in STEC-HUS.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size:
+                                            60%; vertical-align: super;">1</sup></p>
+                                      </td>
+                                </tr>
+                                <tr>
+                                  <td class="padding" style="padding:10px 10px 20px 10px;">
+                                    <p style="color:#ffffff; font-family: 'Lato', sans-serif, Arial, Helvetica!important; font-size:17px;font-weight:bold;line-height: 25px;"><strong style="margin: 0; outline: none; padding: 0;">ULTOMIRIS</strong>, built on the foundation of eculizumab, has an <strong style="margin: 0; outline: none; padding: 0;">~4x longer <span style="white-space: nowrap;">half-life</span></strong><sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: super;">1-3,a,b</sup></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-left:10px;">
+                                    <table class="center-button" align="center" border="0" cellpadding="0" 
+                                    style="border-spacing:0;" role="presentation">
+                                      <tr>
+                                        <td class="center-button" align="center">
+                                          <table class="darkmode-transparent" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td style="border-radius: 10px;" bgcolor="#1e5d7be">
+                                                <a href="https://www.example.com" target="_blank" 
+                                                style="font-family: 'Lato', sans-serif, Arial, Helvetica!important;font-size: 16px; font-weight:bold; text-decoration:none; color:#ffffff; background-color: #f54c19; border: 1px solid #f54c19; border-radius: 10px;padding: 10px 25px;display:inline-block;">LEARN MORE</a>
+                                              </td>
+                                            </tr>
+                                            </table>
+                                           </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                           </td>
+                     </tr>
+                 </table>
+
+                  <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                 <![endif]-->
+                </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- END BANNER -->
+     <!-- 100% width table-->
+     <tr>
+      <td style="padding: 0;">
+         <table width="100%" style="border-spacing: 0;" role="presentation">
+            <tr>
+               <td style="background-color: #fafdfe;padding: 20px 0 20px 0;text-align: center;">
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; padding:0; margin:0; text-align: center; line-height: 20px; font-weight: bold;">Please see Important Safety Information below for ULTOMIRIS, including Boxed WARNING regarding serious and life-threatening meningococcal infections/sepsis</p>
+               </td>
+            </tr>
+            <tr>
+               <td height="1" style="background-color: #007267;"></td>
+            </tr>
+            <tr>
+               <td style="background-color: #fafdfe;padding: 20px 0 10px 0;text-align: center;">
+                  <p class="ulto-text" style="font-family: 'Arial', Helvetica, sans-serif; font-size: 22px; color: #007267; padding:0; margin:0; text-align: center; line-height: 20px; font-weight: bold;">See how ULTOMIRIS works differently</p>
+               </td>
+            </tr>
+         </table>
+      </td>
+     </tr>
+      <!-- START TWO COLUMNS -->
+      <tr>
+         <td style="padding: 0 0 10px 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
+                     <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                        <tr>
+                        <td width="300" valign="top" style="padding: 0;">
+                     <![endif]-->
+                     <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding: 20px;">
+
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <a href="https://example.com" target="_blank"><img src="https://content.app-us1.com/1Mvjk/2021/06/01/c63d2f6294bf266d4c1351d82aa02be4af55dc9a.png?id=4672618?r=772929313" alt="" width="260" style="max-width: 260px;border-radius: 8px;" border="0"></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="padding: 10px 10px 20px 10px;">
+                                       <p style="font-size: 15px;line-height: 20px;"><strong style="margin: 0; outline: none; padding: 0;">1.</strong> Both <strong style="margin: 0; outline: none; padding: 0;">ULTOMIRIS</strong> and eculizumab bind to C5 in the bloodstream to prevent its activation.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: super;">1,2</sup>.</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table>
+
+                     <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="300" valign="top" style="padding: 0;">
+                     <![endif]-->
+
+                     <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding: 20px;">
+
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <a href="https://example.com" target="_blank"><img src="https://content.app-us1.com/1Mvjk/2021/06/01/acb8c848df6af24adc0b88972b2ef4e640cfffa1.png?id=4672628?r=1947840727" alt="" width="260" style="max-width: 260px;border-radius: 8px;" border="0"></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="padding: 10px 10px 20px 10px;">
+                                       <p style="font-size: 15px;line-height: 20px;">2.</strong> <strong style="margin: 0; outline: none; padding: 0;">ULTOMIRIS</strong> is engineered to release C5 in the endosome as pH levels drop and use FcRn to recycle back to the bloodstream, leaving C5 to be degraded by the lysosome.<sup style="margin: 0;
+                                          outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">2,3</sup></p>
+                                    </td>
+                                 </tr>
+                                 
+                              </table>
+
+                           </td>
+                        </tr>
+                     </table>
+
+                     <!-- 3 -->
+                      <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="300" valign="top" style="padding: 0;">
+                     <![endif]-->
+                     <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding: 20px;">
+
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <a href="https://example.com" target="_blank"><img src="https://content.app-us1.com/1Mvjk/2021/06/01/72424f1d543804538028185663c7fb3915c1c3a6.png?id=4672638?r=549859505" alt="" width="260" style="max-width: 260px;border-radius: 8px;" border="0"></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="padding: 10px 10px 20px 10px;">
+                                       <p style="font-size: 15px;line-height: 20px;">3.</strong> <strong style="margin: 0; outline: none; padding: 0;">ULTOMIRIS</strong> has also been engineered to bind to FcRn with greater affinity with a half-life ~4x longer than eculizumab to provide immediate, complete, and sustained inhibition of C5 for up to 8 weeks.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">2,3,c</sup></p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table>
+
+                      <!--[if (gte mso 9)|(IE)]>
+                     </td><td width="300" valign="top" style="padding: 0;">
+                     <![endif]-->
+                     <table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                        <tr>
+                           <td class="padding" style="padding: 20px;">
+
+                              <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                 <tr>
+                                    <td>
+                                       <a href="https://example.com" target="_blank"><img src="https://content.app-us1.com/1Mvjk/2021/06/01/ab8cec7d2af261377f05c03a31c82e48b2c2884a.png?id=4672645?r=883784257" alt="" width="260" style="max-width: 260px;border-radius: 8px;" border="0"></a>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="padding: 10px 10px 20px 10px;">
+                                       <p class="ulto-text" style="font-size: 15px;line-height: 20px;">4.</strong> <strong style="margin: 0; outline: none; padding: 0;">ULTOMIRIS</strong> differs from eculizumab in how it behaves after binding to C5. For eculizumab, binding to C5 inhibits FcRn-mediated recycling, leading to its lysosomal degradation along with C5.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">3</sup></p>
+                                    </td>
+                                 </tr>
+                                 
+                              </table>
+
+                           </td>
+                        </tr>
+                     </table>
+                     <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                     <![endif]-->
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+      <!-- END TWO COLUMNS -->
+      <!-- BEGIN SINGLE COLUMN-->
+      <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 0px 0 10px 0;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 22px; color: #007267; padding:0; margin:0; text-align: center; line-height: 20px; font-weight: bold;">View the ULTOMIRIS Mechanism of Action video</p>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 10px 0 10px 0;text-align: center;">
+                     <a href="https://example.com" target="_blank"><img src="https://viscira98478.imgus11.com/public/29259bc95c1aca9ea0ced4ae98b77857.png?r=674348536" alt="" width="178" style="max-width: 178px;" border="0"></a>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+      <!-- END SINGLE COLUMN-->
+
+      <!-- BEGIN 100w-->
+      <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0; background-color: #007267;" role="presentation">
+               <tr>
+                  <td style="background-color: #007267;padding: 20px 0 20px 0;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #ffffff; padding:0; margin:0; text-align: center; line-height: 20px; font-weight: bold;">Learn more about the <strong style="margin: 0; outline: none; padding: 0;">immediate, complete, and sustained</strong> complement inhibition provided by ULTOMIRIS for adult and pediatric patients with atypical-HUS.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: super;">1</sup></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td style="background-color: #007267;padding: 20px 0 10px 0;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #ffffff; padding:0 5px 0 5px; margin:0; text-align: center; line-height: 20px; font-weight: bold;">Explore the efficacy and safety data for ULTOMIRIS at <a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&redirectUrl=aHR0cHMlM0ElMkYlMkZ3d3cudWx0b21pcmlzaGNwLmNvbSUyRmFodXMlM0Z1dG1fc291cmNlJTNEaGNwX2JyYW5kZWQlMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY2FtcGFpZ24lM0RNQ01fMjFfNzA5MyUyNnV0bV9jb250ZW50JTNEdWx0b21pcmlzaGNwX3RleHRfbGluaw==&sig=2tE3BmB8ARKRjrJzUFf9wGPwEunTtCKhaqAPL12U5kt4&iat=1633391774&a=25828350&account=viscira98478%2Eactivehosted%2Ecom&email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&i=351A412A7A3687" target="_blank" style="margin: 0; outline: none; padding: 0; color: #ffffff; font-weight: bold; text-decoration: underline;">UltomirisHCP.com</a> or by downloading the ULTOMIRIS Efficacy and Safety Brochure.</p>
+                  </td>
+               </tr>
+            </table>
+         </td>
+        </tr>
+      <!-- END 100w-->
+
+      <!-- begin 100w-->
+      <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+              <tr>
+                  <td style="background-color: #fafdfe;padding: 35px 0 25px 0;text-align: center;">
+                     <a href="https://example.com" target="_blank"><img src="https://viscira98478.imgus11.com/public//260b43869a251129dcaa4b6d2ba63584.png?r=1872983981" alt="One Source" width="193" style="width: 193px; max-width: 100%" border="0"></a>
+                  </td>
+               </tr>
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 0px 0 0 0;text-align: center;">
+                     <p class="ulto-text-narrow" style="font-family: 'Arial', Helvetica, sans-serif; font-size: 14px; color: #333333; padding:0 15px 0 15px; margin:0; text-align: center; line-height: 20px; font-weight: bold;">With OneSource<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 1px;">™</sup>, each of your patients will be assigned an Alexion Case Manager with advanced atypical-HUS disease education, health information, community connection, and more. </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 0px 0 25px 0;text-align: center;">
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0px 0 20px 0;text-align: center;">
+                           <a href="https://example.com" target="_blank"><img src="https://viscira98478.imgus11.com/public//6ccc7351382262914042e5b3d3a66426.png?r=971689047" alt="Onesource Support" width="250" style="max-width: 250px; max-width: 100%;" border="0"></a>
+                        </td>
+                     </tr>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="center" height="1" width="93%" style="background-color: #fafdfe;padding: 0px 0 20px 0;mso-line-height-rule: exactly; line-height: 0;">
+                     <table align="center" border="0" cellpadding="0" cellspacing="0" height="1" width="93%" style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto!important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; mso-line-height-rule: exactly; width: 93%; max-width: 93%;">
+                        <tbody><tr style="mso-line-height-rule: exactly;">
+                           <td bgcolor="#7f7f7f" height="1" width="100%" style="mso-line-height-rule: exactly; line-height: 1px; height: 1px; width: 100%; background-color: #7f7f7f;"> </td>
+                        </tr>
+                     </tbody></table>
+                  </td>
+               </tr>
+
+
+            </table>
+         </td>
+      </tr>
+      <!-- end 100w-->
+      <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 0px 0 0 0;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 20px; color: #007267; padding:0; margin:0; font-weight:bold; text-align: center; line-height: 1.38;">Alexion Connect</p>
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #007267; padding:0; margin:0; font-weight:bold; text-align: center; line-height: 1.38;">Healthcare Professionals: Answers to your questions are</p>
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #007267; padding:0; margin:0; font-weight:bold; text-align: center; line-height: 1.38;">a phone call or email away!</p>
+                  </td>
+               </tr>
+            </table>
+         </td>
+       </tr>
+       <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 20px 0 20px 0;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; padding:0; margin:0; text-align: center; line-height: 20px;">Connect with a live Alexion representative.</p>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   <!-- BEGIN one col -->
+
+
+
+   <tr>
+      <td style="padding: 0;">
+         <table border="0" width="100%" style="border-spacing: 0; background-color: #fafdfe;" role="presentation">
+            <tr>
+               <td style="background-color: #fafdfe;padding: 20px 0 20px 0;text-align: center;">
+                  <table style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 195px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; max-width: 250px;">
+                     <tbody><tr style="mso-line-height-rule: exactly; display: table; margin: auto;">
+                        <td align="center" style="mso-line-height-rule: exactly;"><img src="https://ac-image.s3.amazonaws.com/9/3/0/2/2/0/home/rakeshshr87%40gmail.com/branded/icon-phone.png?r=742731376" height="100" width="100"></td>
+                     </tr>
+                     <tr style="mso-line-height-rule: exactly;">
+                        <td style="mso-line-height-rule: exactly;"> </td>
+                     </tr>
+                     <tr style="mso-line-height-rule: exactly;">
+                        <td style="mso-line-height-rule: exactly; font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #ff5025; text-align: center; line-height: normal; text-decoration: underline;"> <a href="tel:833-551-2539" style="margin: 0; outline: none; padding: 0; color: #ff5025; font-weight: bold; text-decoration: underline;">833-551-2539</a> </td>
+                     </tr>
+                  </tbody></table>
+               </td>
+               <td style="background-color: #fafdfe;padding:10px 0 10px 0;text-align: center;">
+                  <table style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 195px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; max-width: 350px;">
+                     <tbody><tr style="mso-line-height-rule: exactly; display: table; margin: auto;">
+                        <td align="center" style="mso-line-height-rule: exactly;"><img src="https://ac-image.s3.amazonaws.com/9/3/0/2/2/0/home/rakeshshr87%40gmail.com/branded/icon-mail.png?r=1993864729" height="100" width="100"></td>
+                     </tr>
+                     <tr style="mso-line-height-rule: exactly;">
+                        <td style="mso-line-height-rule: exactly;"> </td>
+                     </tr>
+                     <tr style="mso-line-height-rule: exactly;">
+                        <td style="mso-line-height-rule: exactly; font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; text-align: center; line-height: normal;"> <a href="mailto:AlexionConnectTeam@Alexion.com?utm_source=hcp_branded&amp;utm_medium=email&amp;utm_campaign=MCM_21_7093&amp;utm_content=alexion_connect_link" style="margin: 0; outline: none; padding: 0 5px 0 0; color: #ff5025; text-decoration: underline; font-weight: bold;">AlexionConnectTeam@alexion.com</a> </td>
+                     </tr>
+                  </tbody></table>
+               </td>
+            </tr>
+           
+              
+           
+         </table>
+      </td>
+     </tr>
+ 
+       <!-- 100% width table-->
+       <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td height="1" style="background-color: #007267;"></td>
+               </tr>
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 20px 15px 20px 15px;text-align: center;">
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333!important; text-decoration: none !important; padding:0; margin:0; text-align: left; line-height: 16px;"><sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 2px;">a</sup>The mean (%CV) terminal elimination half-life and clearance of ULTOMIRIS in patients with atypical-HUS are 5&zwj;<span>1&zwj;.&zwj;</span>&zwj;8 (<span>3&zwj;1</span>.&zwj;3&zwj;<span>) days and 0.</span>08 (<span>5&zwj;3&zwj;.&zwj;</span>&zwj;3&zwj;) L/day, respectively. Half-life of eculizumab is 11.25 to 17.25 days.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 2px;">1,2</sup><sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 2px;"> b</sup>Targeted engineering to
+                        incorporate 4 amino acid substitutions designed to reduce TMDD and enhance FcRn-mediated recycling into eculizumab has led to the generation of ULTOMIRIS, which exhibited an extended duration of action in preclinical models relative to eculizumab.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 2px;">3 c</sup>In the majority (93%) of adult and pediatric patients with atypical-HUS throughout the entire 26-week treatment period.<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 70%; vertical-align: 2px;">1</sup>
+                     </p>
+                     <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333; padding:0; margin:0; text-align: left; line-height: 16px;">%CV=coefficient of variation; FcRn=human neonatal Fc receptor; TMDD=target-mediated drug disposition.</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td height="1" style="background-color: #007267;"></td>
+               </tr>
+            </table>
+         </td>
+        </tr>
+        </table>
+        <!-- end 100% width table -->
+        <!-- begin ISI 100% width table -->
+        <tr>
+         <td style="padding: 0;">
+            <table width="100%" style="border-spacing: 0;" role="presentation">
+               <tr>
+                  <td style="background-color: #fafdfe;padding: 25px 15px 25px 15px;text-align: center;"><p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; padding:0; margin:0; text-align: left; font-weight:bold; line-height: 20px;">IMPORTANT SAFETY INFORMATION</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top" style="padding: 0px 20px 20px 20px;">
+                     <table width="100%" border="2" style="border:2px solid #000000; -ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%;  font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" role="presentation">
+                        <tr>
+                           <td style="padding: 0 20px 0 20px;">
+                              <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:20px 0 5px 0; padding: 0; text-align: center; line-height: 20px; font-weight: bold;">WARNING: SERIOUS MENINGOCOCCAL INFECTIONS</p>
+                              <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0 0 5px 0; padding: 0; text-align: left; line-height: 20px; font-weight: bold;">Life-threatening meningococcal infections/sepsis have occurred in patients treated with ULTOMIRIS. Meningococcal infection may become rapidly life-threatening or fatal if not recognized and treated early.</p>
+                              <div style="margin: 10px; outline: none; padding: 0;"></div>
+                              <ul style="Margin:0; padding:0; font-family: 'Arial', Helvetica, sans-serif; list-style-type: disc; mso-special-format: bullet; padding: 0 0 0 20px !important; /*text-indent: -1.3em;*/ font-size: 16px; font-weight: bold; color: #333333 !important; text-align: left; line-height: 20px; list-style-position: outside;">
+                                 <li style="Margin:0 0 10px 0; list-style:disc outside; mso-special-format:bullet;">Comply with the most current Advisory Committee on Immunization Practices (ACIP) recommendations for meningococcal vaccination in patients with complement deficiencies.</li>
+                                 <li style="Margin:0 0 10px 0; list-style:disc outside; mso-special-format:bullet;">Immunize patients with meningococcal vaccines at least 2 weeks prior to administering the first dose of ULTOMIRIS, unless the risks of delaying ULTOMIRIS therapy outweigh the risk of developing a meningococcal infection. See <em style="margin: 0; outline: none; padding: 0;">Warnings and Precautions</em> for additional
+                                    guidance on the management of the risk of meningococcal infection.
+                                 </li>
+                                 <li style="Margin:10px 0 10px 0; list-style:disc outside; mso-special-format:bullet;">Vaccination reduces, but does not eliminate, the risk of meningococcal infections. Monitor patients for early signs of meningococcal infections and evaluate immediately if infection is suspected.</li>
+                              </ul>
+                              <div style="margin: 10px; outline: none; padding: 0;"></div>
+                              <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding: 0; text-align: left; line-height: 20px; font-weight: bold;">ULTOMIRIS is available only through a restricted program under a Risk Evaluation and Mitigation Strategy (REMS). Under the ULTOMIRIS REMS, prescribers must enroll in the program. Enrollment in the ULTOMIRIS REMS program and additional information are available by <span style="white-space:nowrap">telephone: 1-888-765-4747</span> or at <a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&amp;redirectUrl=aHR0cHMlM0ElMkYlMkZ1bHRvbWlyaXNyZW1zLmNvbSUyRg==&amp;sig=J6qc8aWmRge6rEhA1UepvDm4FM32skRtgnuv5xwpNPEi&amp;iat=1633391774&amp;a=25828350&amp;account=viscira98478%2Eactivehosted%2Ecom&amp;email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&amp;s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&amp;i=351A412A7A3690" target="_blank" style="margin: 0; outline: none; padding: 0; color: #000000;"><span style="color:#333333; text-decoration:none !important;
+                                 text-decoration:none;">w&zwj;<span>w</span>&zwj;w&zwj;.&zwj;ul&zwj;to&zwj;mi&zwj;ri&zwj;s&zwj;r<span>e</span>m&zwj;s.&zwj;c&zwj;o&zwj;m</span></a>.</p>
+                           </td>
+                        </tr>
+                     </table>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 10px 15px 25px 15px;text-align: center;"><p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding: 0; text-align: left; line-height: 20px; font-weight: bold;">CONTRAINDICATIONS</p>
+                        <div style="margin: 1px; outline: none; padding: 0;"></div>
+                        <ul style="Margin:0; padding:0; font-family: 'Arial', Helvetica, sans-serif; list-style-type: disc; mso-special-format: bullet; padding: 0 0 0 20px !important; /*text-indent: -1.3em;*/ font-size: 16px; color: #333333 !important; text-align: left; line-height: 20px; list-style-position: outside;">
+                           <li style="Margin:0 0 3px 0; list-style:disc outside; mso-special-format:bullet;">Patients with unresolved <em style="margin: 0; outline: none; padding: 0;">Neisseria meningitidis</em> infection.</li>
+                           <li style="Margin:0 0 3px 0; list-style:disc outside; mso-special-format:bullet;">Patients who are not currently vaccinated against <em style="margin: 0; outline: none; padding: 0;">Neisseria meningitidis</em>, unless the risks of delaying ULTOMIRIS treatment outweigh the risks of developing a meningococcal infection.</li>
+                        </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0px 15px 25px 15px;text-align: center;"><p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">WARNINGS AND PRECAUTIONS </p>
+                        <div style="margin: 1px; outline: none; padding: 0;"></div>
+                        <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Serious Meningococcal Infections </p>
+                        <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                        <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; text-decoration: underline;">Risk and Prevention</p>
+                        <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                        <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Life-threatening meningococcal infections have occurred in patients treated with ULTOMIRIS. The use of ULTOMIRIS increases a patient’s susceptibility to serious meningococcal infections (septicemia and/or meningitis). Meningococcal disease due to any serogroup may occur.</p>
+                        <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Vaccinate or revaccinate for meningococcal disease according to the most current ACIP recommendations for patients with complement deficiencies. Immunize patients without history of meningococcal vaccination at least 2 weeks prior to the first dose of ULTOMIRIS. If ULTOMIRIS must be initiated immediately in an unvaccinated patient, administer meningococcal vaccine(s) as soon as possible and provide 2 weeks of antibacterial drug prophylaxis. The benefits and risks of antibiotic prophylaxis for prevention of meningococcal infections in patients receiving ULTOMIRIS have not been established. Consider discontinuation of ULTOMIRIS in patients who are undergoing treatment for serious meningococcal infection. 
+                           </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;"><p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal; text-decoration: underline;">REMS </p>
+                        <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                        <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Under the ULTOMIRIS REMS, prescribers must enroll in the program due to the risk of meningococcal infections. Prescribers must counsel patients about the risk of meningococcal infection/sepsis, provide the patients with the REMS educational materials, and ensure patients are vaccinated with meningococcal vaccines.</p>
+                        <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Other Infections </p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Patients may have increased susceptibility to encapsulated bacteria infections, especially infections caused by <em style="margin: 0; outline: none; padding: 0;">Neisseria meningitidis</em> but also <em style="margin: 0; outline: none; padding: 0;">Streptococcus pneumoniae</em>, <em style="margin: 0; outline: none; padding: 0;">Haemophilus influenzae</em>, and to a lesser extent, <em style="margin: 0; outline: none; padding: 0;">Neisseria gonorrhoeae</em>. Children treated with ULTOMIRIS may be at increased risk of developing serious infections due to <em style="margin: 0; outline: none; padding: 0;">Streptococcus pneumoniae</em> and <em style="margin: 0; outline: none; padding: 0;">Haemophilus influenzae</em> type b (Hib). Administer vaccinations for the prevention of <em style="margin: 0; outline:
+                              none; padding: 0;">Streptococcus pneumoniae</em> and <em style="margin: 0; outline: none; padding: 0;">Haemophilus influenzae</em> type b (Hib) infections according to ACIP guidelines. If ULTOMIRIS is administered to patients with active systemic infections, monitor closely for worsening infection.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Monitoring Disease Manifestations after ULTOMIRIS </p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Discontinuation </p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">ULTOMIRIS treatment of aHUS should be a minimum duration of 6 months. Due to heterogeneous nature of aHUS events and patient-specific risk factors, treatment duration beyond the initial 6 months should be individualized. There are no specific data on ULTOMIRIS discontinuation. After discontinuing treatment with ULTOMIRIS, patients should be monitored for clinical symptoms and laboratory signs of TMA complications for at least 12 months. </p>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin: 10px 0 0 0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">TMA complications post-discontinuation can be identified if any of the following is observed: Clinical symptoms of TMA include changes in mental status, seizures, angina, dyspnea, thrombosis or increasing blood pressure. In addition, at least two of the following laboratory signs observed concurrently and results should be confirmed by a second measurement 28 days apart with no interruption: a decrease in platelet count of 25% or more as compared to either baseline or to peak platelet count during ULTOMIRIS treatment; an increase in serum creatinine of 25% or more as compared to baseline or to nadir during ULTOMIRIS treatment; or, an increase in serum LDH of 25% or more as compared to baseline or to nadir during ULTOMIRIS treatment. If TMA complications occur after discontinuation, consider
+                              reinitiation of ULTOMIRIS treatment or appropriate organ-specific supportive measures.
+                           </p>
+
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Thromboembolic Event Management</p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">The effect of withdrawal of anticoagulant therapy during treatment with ULTOMIRIS has not been established. Treatment should not alter anticoagulant management.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Infusion-Related Reactions </p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Administration of ULTOMIRIS may result in infusion-related reactions. In clinical trials, 4 out of 309 patients treated with ULTOMIRIS experienced infusion-related reactions (lower back pain, drop in blood pressure, elevation in blood pressure and limb discomfort) during ULTOMIRIS administration which did not require discontinuation. Interrupt infusion and institute supportive measures if signs of cardiovascular instability or respiratory compromise occur. </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">ADVERSE REACTIONS</p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">Most common adverse reactions in patients with aHUS (incidence ≥20%) were upper respiratory tract infection, diarrhea, nausea, vomiting, headache, hypertension and pyrexia. Serious adverse reactions were reported in 42 (57%) patients with aHUS receiving ULTOMIRIS. The most frequent serious adverse reactions reported in more than 2 patients (2.7%) treated with ULTOMIRIS were hypertension, pneumonia and abdominal pain. In clinical studies, clinically relevant adverse reactions in &lt;10% of patients include viral tonsillitis in adults and viral infection in pediatric patients.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">INDICATION</p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">ULTOMIRIS is indicated for the treatment of adults and pediatric patients one month of age and older with atypical hemolytic uremic syndrome (aHUS) to inhibit complement-mediated thrombotic microangiopathy (TMA).</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; text-decoration:underline;">Limitation of Use:</p>
+                           <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: normal;">ULTOMIRIS is not indicated for the treatment of patients with Shiga toxin E. coli related hemolytic uremic syndrome (STEC‑HUS).</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #fafdfe;padding: 0 15px 25px 15px;text-align: center;">
+                           <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 16px; color: #333333; margin:0; padding:0; text-align: left; line-height: 20px; font-weight: bold;">Please see accompanying full <a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&amp;redirectUrl=aHR0cHMlM0ElMkYlMkZhbGV4aW9uLmNvbSUyRkRvY3VtZW50cyUyRlVsdG9taXJpc19VU1BJLnBkZiUzRnV0bV9zb3VyY2UlM0RoY3BfYnJhbmRlZCUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jYW1wYWlnbiUzRE1DTV8yMV83MDkzJTI2dXRtX2NvbnRlbnQlM0RmdWxsX3ByZXNjcmliaW5nX2luZm8=&amp;sig=EHfQPQofxCyWrARvWXfQYHK591RhZrtEpW9UirFc9Tmh&amp;iat=1633391774&amp;a=25828350&amp;account=viscira98478%2Eactivehosted%2Ecom&amp;email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&amp;s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&amp;i=351A412A7A3682" target="_blank" style="margin: 0; outline: none; padding: 0; color: #333333; text-decoration: underline;">Prescribing Information</a> for ULTOMIRIS, including Boxed WARNING regarding serious and life-threatening meningococcal infections/sepsis.</p>
+                        </td>
+                     </tr>
+                  </td>
+               </tr>
+            </table>
+         </td>
+       </tr>
+    <!-- end ISI 100% width table -->
+
+   <!-- begin refs 100% width table -->
+   <tr>
+      <td>
+         <table width="100%" style="border-spacing: 0;" role="presentation">
+            <tr>
+               <td height="1" style="background-color: #007267;"></td>
+            </tr>
+            <tr>
+               <td style="background-color: #fafdfe;padding: 20px 15px 20px 15px;text-align: center;">
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333; margin:0; padding:0; text-align: left; line-height: 16px; font-weight:bold;">References</p>
+                  <div style="margin: 0; outline: none; padding: 0; height: 2px;"></div>
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333; margin:0; padding:0; text-align: left; line-height: 16px; font-weight: normal;">1. ULTOMIRIS. Prescribing information. Alexion Pharmaceuticals, Inc.; 2021.</p>
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333; margin:0; padding:0; text-align: left; line-height: 16px; font-weight: normal;">2. SOLIRIS. Prescribing information. Alexion Pharmaceuticals, Inc.; 2020.</p>
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #333333 !important; text-decoration: none !important; margin:0; padding:0; text-align: left; line-height: 16px; font-weight: normal;">3. Sheridan D, et al. <em style="margin: 0; outline: none; padding: 0;">PLoS One</em>. <span style="color: #333333 !important; text-decoration: none !important;">2018;13(4):e0195909</span>.</p>
+               </td>
+            </tr>
+         </table>
+      </td>
+     </tr>
+   <!-- end refs 100% width table -->
+   <!-- begin footer -->
+   <tr>
+      <td style="padding: 0;background-color: #333333;">
+         <table width="100%" style="border-spacing: 0; " role="presentation">
+            <tr>
+               <td style="padding: 60px 0 50px 0;background-color: #333333;text-align: center;font-size: 16px;">
+                  <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ffffff; margin:0; padding:0; text-align: center; line-height: 20px; font-weight: normal;">This email was sent by:<br> Alexion Pharmaceuticals <br><span style="color: #ffffff !important;">1&zwnj;<span>2</span>&zwnj;1 Se&zwnj;a&zwnj;por&zwnj;t <span>B</span>l&zwnj;v&zwnj;d, Bo&zwnj;s&zwnj;t&zwnj;on, MA 0&zwnj;<span>2</span>&zwnj;2&zwnj;1<span>0</span>, <span>U</span>&zwnj;S&zwnj;A</span><br><br><a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&amp;redirectUrl=aHR0cHMlM0ElMkYlMkZhbGV4aW9uLmNvbSUyRmNvbnRhY3QtYWxleGlvbiUzRnV0bV9zb3VyY2UlM0RoY3BfYnJhbmRlZCUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jYW1wYWlnbiUzRE1DTV8yMV83MDkzJTI2dXRtX2NvbnRlbnQlM0Rjb250YWN0X3VzX2xpbms=&amp;sig=7bRYhEBRXDLmnE4UFPy4goHg7CXyFSqMYPcVQR3MX7Bq&amp;iat=1633391774&amp;a=25828350&amp;account=viscira98478%2Eactivehosted%2Ecom&amp;email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&amp;s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&amp;i=351A412A7A3691" target="_blank" style="margin: 0; outline: none; padding: 0; color:
+                     #ffffff; text-decoration: underline;"><span style="white-space: nowrap;">Contact Us</span></a>  |  <a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&amp;redirectUrl=aHR0cHMlM0ElMkYlMkZjbG91ZC5pbmZvLmFsZXhpb24uY29tJTJGVW5zdWJzY3JpYmVDb21wbGVtZW50JTNGdXNlckVtYWlsQWRkciUzRCUyNSUyNWVtYWlsYWRkciUyNSUyNSUzRnV0bV9zb3VyY2UlM0RoY3BfYnJhbmRlZCUyNnV0bV9tZWRpdW0lM0RlbWFpbCUyNnV0bV9jYW1wYWlnbiUzRE1DTV8yMV83MDkzJTI2dXRtX2NvbnRlbnQlM0R1bnN1YnNjcmliZV9saW5r&amp;sig=DuCieSWHMNx58d2hkBB3FP3qUR49WzsFKzgqX4brKiVB&amp;iat=1633391774&amp;a=25828350&amp;account=viscira98478%2Eactivehosted%2Ecom&amp;email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&amp;s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&amp;i=351A412A7A3692" target="_blank" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;">Unsubscribe</a>  |  <a href="https://viscira98478.lt.acemlnc.com/Prod/link-tracker?notrack=1&amp;redirectUrl=aHR0cHMlM0ElMkYlMkZhbGV4aW9uLmNvbSUyRkxlZ2FsJTNGdXRtX3NvdXJjZSUzRGhjcF9icmFuZGVkJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NhbXBhaWduJTNETUNNXzIxXzcwOTMlMjZ1dG1fY29udGVudCUzRHByaXZhY3lfbm90aWNlX2xpbmslMjNwcml2YWN5bm90aWNl&amp;sig=BnySe9Vd51gD5H7g5iq4jP4rL868C6p26YFhc8eFJYtY&amp;iat=1633391774&amp;a=25828350&amp;account=viscira98478%2Eactivehosted%2Ecom&amp;email=aPF9nHgzuFzbfRlS8ZlNUTaZadoaUrI%2Bt%2BupMlcSPnU%3D&amp;s=cmFrZXNoLnNocmVzdGhhQGxpdG11c2VtYWlsLmNvbQ==&amp;i=351A412A7A3693" target="_blank" style="margin: 0; outline: none; padding: 0; color: #ffffff; text-decoration: underline;">Privacy Notice</a> 
+                     
+                     <img src="https://content.app-us1.com/1Mvjk/2021/08/11/ca55778b-37e6-4b95-85fe-e05b31fa4a58.png?id=5158110" alt="Alexion Logo" width="208" style="border: none; display: block; outline: none; width: 208px; text-align:center; Margin: 0 auto;">
+                  
+                  </p>
+                  <p style="font-family: 'Arial', Helvetica, sans-serif; font-size: 12px; color: #ffffff; margin:0; padding:0; text-align: center; line-height: 18px; font-weight: normal;">Alexion<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">®</sup>, ULTOMIRIS<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">®</sup>, the ULTOMIRIS logo, the Alexion logo, and the OneSource logo<br> are registered trademarks of Alexion Pharmaceuticals, Inc., and OneSource<sup style="margin: 0; outline: none; padding: 0; line-height: 0; font-size: 60%; vertical-align: 2px;">™</sup> is a trademark of Alexion Pharmaceuticals, Inc. <br><span style="color: #ffffff !important;">© 2021, Alexion Pharmaceuticals, Inc. All rights reserved.</span><br><br><span style="color: #ffffff !important;">US/ULT-a/0281</span> <br><br></p>
+
+
+                         </td>
+                        </tr>
+                       
+                <!-- <p style="font-size: 16px;padding: 10px 0 5px 0;">Responsive HTML Email</p>
+                  <p style="font-size: 16px;padsding-bottom: 5px;">123 Street Road, City, State 55555</p>
+                  <p style="font-size: 16px;padding-bottom: 5px;"><a href="mailto:email@example.com" style="text-decoration:none;color:#e8fbfa">email@example.com</a></p>
+                  <p style="font-size: 16px;padding-bottom: 5px;"><a href="tel:18008888888" style="text-decoration:none;color:#e8fbfa">1-800-888-8888</a></p>
+                  <p style="font-size: 13px;"><a href="https://example.com" style="text-decoration:none;color:#e8fbfa">UNSUBSCRIBE</a></p> -->
+               </td>
+            </tr>
+
+            <tr>
+               <td height="4" style="background-color: #21c6b8;"></td>
+            </tr>
+
+         </table>
+      </td>
+   </tr>
+  
+     <!-- end footer -->
+   </table>
+
+         <!--[if (gte mso 9)|(IE)]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+      
+      </div>
+   </center>
+
+</body>
+</html>
